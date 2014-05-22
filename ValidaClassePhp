@@ -1,0 +1,25 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package temp;
+
+/**
+ *
+ * @author lucas
+ */
+public class ValidaClassePhp {
+    
+/*Coisas pendentes do método: 1-deve validar a classe mesmo existindo espaços em
+        branco,tabulação e quebras de linha      */
+    
+    public boolean isValida(String text){
+        
+        if(text.trim().startsWith("<?php") && text.trim().endsWith("?>"))return true;
+        
+        return false;
+    }
+    
+}
